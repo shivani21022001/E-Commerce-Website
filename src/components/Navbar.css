@@ -1,0 +1,174 @@
+/* Navbar shell */
+.navbar {
+  background: rgb(215, 224, 230);
+  border-bottom: 1px solid #d5dfe7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Container */
+.navbar-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 14px 28px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2a2a2a;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+/* Search */
+.navbar-search {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 10px 18px;
+  border-radius: 24px;
+  border: 1px solid #c7d3d8;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.navbar-search::placeholder {
+  color: #aaa;
+}
+
+.navbar-search:focus {
+  border-color: #61a4c5;
+  box-shadow: 0 0 0 2px rgba(197, 160, 97, 0.25);
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f2f2f;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #619bc5;
+}
+
+/* Cart badge */
+.cart-count {
+  background: #61aac5;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+/* User section */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #619fc5, #4f99b0);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+
+/* Text beside avatar */
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* Welcome text */
+.welcome-text {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+/* Username */
+.profile-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Logout */
+.logout-btn {
+  background: transparent;
+  border: 1px solid #c4ced6;
+  border-radius: 18px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+  transition: all 0.2s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logout-btn:hover {
+  background: #e6f0f3;
+  border-color: #61a5c5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .navbar-right {
+    justify-content: center;
+  }
+}
+
+.login-link {
+  border: 1px solid #c4d1d6;
+  padding: 6px 14px;
+  border-radius: 18px;
+}
+
+.login-link:hover {
+  background: #e6eef3;
+  border-color: #61a4c5;
+}
+

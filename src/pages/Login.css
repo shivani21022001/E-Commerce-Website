@@ -1,0 +1,124 @@
+/* Full page background */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Login card */
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 36px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Brand title */
+.login-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #2b2b2b;
+  margin-bottom: 6px;
+}
+
+/* Subtitle */
+.login-subtitle {
+  text-align: center;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 32px;
+}
+
+/* Form layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Field wrapper */
+.login-field {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.login-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #5fb1c5;
+  box-shadow: 0 0 0 3px rgba(197, 157, 95, 0.25);
+}
+
+/* Button */
+.login-button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #70abd4, #4593c0);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.login-button:hover {
+  box-shadow: 0 10px 25px rgba(95, 151, 197, 0.45);
+  transform: translateY(-1px);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+/* Footer */
+.login-footer {
+  text-align: center;
+  margin-top: 26px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-footer a {
+  color: #5ca1c0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 32px 26px;
+  }
+
+  .login-title {
+    font-size: 26px;
+  }
+}
